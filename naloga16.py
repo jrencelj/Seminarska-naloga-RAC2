@@ -11,7 +11,7 @@ def gospod_lisjak(tabela):
                 r = pomozna(i + 1, ring = 0, ding = ding)
             if ding == 3:
                 r = tabela[i] + pomozna(i + 1, ring = ring + 1, ding = 0)
-                d = pomozna(i + 1, ding = 0, ring = 0)
+                d = pomozna(i + 1, ding = 0, ring = ring)
         else:
             r = tabela[i] + pomozna(i + 1, ring = ring + 1, ding = 0) # Reče 'RING'
             d = -tabela[i] + pomozna(i + 1, ring = 0, ding = ding + 1) # Reče 'DING'
