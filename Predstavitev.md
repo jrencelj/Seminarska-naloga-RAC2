@@ -14,3 +14,7 @@ Podan imamo seznam, ki lahko vsebuje cela števila in poljubne ne številske zna
 
 ### **Naivna rešitev:**
 Poiščemo vsote vseh možnih zaporednih podseznamov in med njimi poiščemo maksimalnega. Izberemo si $i$-ti element v seznamu, ki predstavlja prvo število trenutne vsote in postopoma dodajamo elemente vse do $n$-tega. S tem dobimo lokalni maksimum $i$-te vsote
+
+## **Naloga 2**
+
+* krneki
