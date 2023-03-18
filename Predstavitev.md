@@ -51,11 +51,11 @@ Naivna rešitev je, da poiščemo vse produkte podseznamov, ki imajo za prvi ele
 
 DINAMIČNA REŠITEV:
 
-Na vsakem koraku si zapomnimo minimalni in maksimalni produkt podseznamov, ki se končajo z $i$-tim členom prvotnega seznama. V primeru da je $i+1$ element negativen je $min\_ prod(i)*sez[i+1]$ lahko največji produkt in $max\_ prod(i)*sez[i+1]$ postane minimalni produkt. Torej ključna ideja je na vsakem hraniti vrednost $min\_ prod$ in $max\_ prod$.
+Na vsakem koraku si zapomnimo minimalni in maksimalni produkt podseznamov, ki se končajo z $i$-tim členom prvotnega seznama. V primeru da je $i+1$ element negativen je $min_{prod}(i)*sez[i+1]$ lahko največji produkt in $max_{prod}(i)*sez[i+1]$ postane minimalni produkt. Torej ključna ideja je na vsakem hraniti vrednost $min_{prod}$ in $max_{prod}$.
 
 Na vsakem koraku imamo tri možnosti kako dobit največji produkt podseznama, ki se konča z $i$-tim elementom:
-* Če je novi (zadnji/$i$-ti) element pozitivno število bomo lahko maksimalni produkt dobili tako da novi element pomnožimo z $max\_ prod(i-1)$
-* Če je  novi (zadnji/$j$-ti) element negativno število bomo lahko največji produkt dobili tako da novi element pomnožimo z $min\_ prod(j-1)$
+* Če je novi (zadnji/ $i$-ti) element pozitivno število bomo lahko maksimalni produkt dobili tako da novi element pomnožimo z $max\_ prod(i-1)$
+* Če je  novi (zadnji/ $j$-ti) element negativno število bomo lahko največji produkt dobili tako da novi element pomnožimo z $min\_ prod(j-1)$
 * Trenutni element je začetni element za največji produkt (v primeru da je $j-1$ element 0 ali $j=0$)
 
 Torej:
@@ -64,6 +64,6 @@ Torej:
 $max\_ i = max(max\_i * sez[j], sez[j])$\
 $min_i = min(min\_ i * sez[j], sez[j])$
 * V primeru da je $j$-ti element negativno število vrednoti zamenjamo $max\_ i = min\_ i in min\_ i = max\_ i$
-* Na vsakem koraku preverimo $max\_ globalni = max(max\_ i, max\_ globalni)$
+* Na vsakem koraku preverimo $max_{globalni} = max(max_i, max_{globalni})$
 
 Časovna zahtevnost tega algoritma je $O(n)$.
