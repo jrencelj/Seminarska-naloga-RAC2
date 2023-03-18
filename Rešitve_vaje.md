@@ -24,5 +24,19 @@ ___
 # Naloga 3
 
 ```
+def vsota(sez):
+    '''vrne največjo vsoto podseznama
+    danega seznama'''
+    vsi = []
 
+    def pomozna(i):
+        if i == 0:
+            vsi.append(sez[0])
+            return sez[0]
+        else:
+            trenutni = max(pomozna(i-1)+sez[i], sez[i])
+            vsi.append(trenutni)
+            return trenutni
+    pomozna(len(sez)-1)
+    return max(vsi)
 ```
