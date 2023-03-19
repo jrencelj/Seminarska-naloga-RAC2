@@ -63,7 +63,7 @@ Torej:
 * Na vsakem koraku spremenimo vrednosti $max_\ i$ ter $min_\ i$\
 $max\_ i = max(max\_i * sez[j], sez[j])$\
 $min_i = min(min\_ i * sez[j], sez[j])$
-* V primeru da je $j$-ti element negativno število vrednoti zamenjamo $max\_ i = min\_ i in min\_ i = max\_ i$
+* V primeru da je $j$-ti element negativno število vrednoti zamenjamo $max\_ i = min\_ i$ in $min\_ i = max\_ i$
 * Na vsakem koraku preverimo $max\_ globalni = max(max\_ i, max\_ globalni)$
 
 Časovna zahtevnost tega algoritma je $O(n)$.
