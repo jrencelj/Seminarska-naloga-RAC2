@@ -23,20 +23,16 @@ ___
 
 # Naloga 3
 
-```
-def vsota(sez):
-    '''vrne največjo vsoto podseznama
-    danega seznama'''
-    vsi = []
+## 3.1
 
-    def pomozna(i):
-        if i == 0:
-            vsi.append(sez[0])
-            return sez[0]
-        else:
-            trenutni = max(pomozna(i-1)+sez[i], sez[i])
-            vsi.append(trenutni)
-            return trenutni
-    pomozna(len(sez)-1)
-    return max(vsi)
-```
+Dolžina najdaljšega naraščajočega podzaporedja je 6. ([2, 6, 8, 11, 12, 14])
+
+![graf1](graf1.png)
+
+## 3.2
+
+Dolžina najdaljšega padajočega podzaporedja je 5. ([13, 11, 9, 7, 3])
+
+![graf2](graf2.png)
+
+
