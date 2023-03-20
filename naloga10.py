@@ -69,7 +69,7 @@ def najdaljse_podzaporedje(tab):
         for i in range(z, k + 1):
             if tab[i] <= m:
                 continue
-            if (i + 1) % 2 == 0:
+            elif (i + 1) % 2 == 0:
                 t = 1 + pomozna(0, i - 1, tab[i])
             elif (i + 1) % 2 == 1:
                 t = 1 + pomozna(i + 1, d - 1, tab[i])
@@ -89,4 +89,6 @@ tab2 = [1, 1, 8, 7, 5, 6, 3, 6, 4, 4]
 tab3 = [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
 tab4 = [1, 1, 8, 7, 5, 6, 3, 6, 4]
 tab5 = [10, 9, 1, 2, 3, 5, 0]
-print(najdaljse_podzaporedje(tab))
+tab7 = [1, 2, 4, 9]
+tab6 = [i for i in range(10)]
+print(najdaljse_podzaporedje(tab7))
