@@ -17,7 +17,7 @@ BRUTE FORCE PRISTOP:
 
 Poiščemo vsote vseh možnih zaporednih podseznamov in med njimi poiščemo maksimalnega. Izberemo si $i$-ti element v seznamu, ki predstavlja prvo število trenutne vsote in postopoma dodajamo elemente vse do $n$-tega. S tem dobimo lokalni maksimum $i$-te vsote. Naj bo lokalni maksimum, maksimum vsote vseh možnih podseznamov, ki se začnejo z elementom $A[i]$. Ko pregledamo vse indekse od 1 do $n$, imamo shranjene vse lokalne maksimume za vse indekse. Vzamemo maksimum od vseh lokalnih maksimumov in dobimo rešitev. 
 
-![Alt text](slika1.png)
+![Alt text](slika_1.png)
 
 Vendar ta pristop ni najbolj optimalen. Z večanjem seznama se veča množica vseh podseznamov in stem se časovna zahtevnost povečuje. Časovna zahtevnost je torej zaradi dveh gnezdenih zank $O(n)$. Poglejmo si kako bi lahko izboljšali algoritem.
 
@@ -27,7 +27,7 @@ Tokrat začnemo z iskanjem največje vsote podseznama od zadnjega elementa sezna
 
 $$lokalni_\ maksimum[i] = max(A[i], A[i] + lokalni_\ maksikum[i-1])$$
 
-![Alt text](slika2.png)
+![Alt text](slika_2.png)
 
 Na ta način na vsakem indeksu $i$ problem prevedemo na iskanje maksimuma dveh števil, $A[i]$ in ($A[i]$ + $lokalni_\ maksimum[i-1]$). Velja tudi, da je $lokalni_\ maksimum[0]$ enak $A[0]$.
 
