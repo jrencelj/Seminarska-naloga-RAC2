@@ -13,7 +13,7 @@ Napišite funkcijo `najvecja_podmnozica(tab)`, ki poišče in nariše največjo 
 Prav tako napišite funkcijo, ki poišče in nariše največjo podmnožico, kjer se vsi pari daljic med seboj sekajo.\
 **Namig:** [Longest increasing subsequence](https://en.wikipedia.org/wiki/Longest_increasing_subsequence)
 ---
-4. Podan imamo seznam števil $A=[a_1 \ldots a_n]$.\
+4. Podan imamo seznam števil $A=[a_1 \ldots a_n]$.
 * Števila $a$ so lahko negativna, pozitivna ali enaka 0.
 * Na vsakem koraku se odločimo ali rečemo *"Ring"* ali *"Ding"*.
 > V primeru da rečemo *"Ding"* poberemo $-A[i]$\
