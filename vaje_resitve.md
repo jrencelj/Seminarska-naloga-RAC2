@@ -27,13 +27,13 @@ ___
 
 Dolžina najdaljšega naraščajočega podzaporedja je 6. ([2, 6, 8, 11, 12, 14])
 
-![graf1](graf1.png)
+![graf1](graf_1.png)
 
 ## 3.2
 
 Dolžina najdaljšega padajočega podzaporedja je 5. ([13, 11, 9, 7, 3])
 
-![graf2](graf2.png)
+![graf2](graf_2.png)
 
 # Naloga 4
 ``` python
