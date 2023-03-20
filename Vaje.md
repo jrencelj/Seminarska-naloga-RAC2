@@ -45,7 +45,7 @@ def lisjak(tabela):
         return memo[(i, ring, ding)]
     return pomozna(0, 0, 0)
 ```
-Tvoja naloga je, da zgornjo kodo dopolniš. Koda naj vrne seznam $D$-jev in $R$-jev, ki nam predstavljaj, kaj moramo izreči na $i$-tem indeksu, da bo naša vsota največja možna.
+Tvoja naloga je, da zgornjo kodo dopolniš. Koda naj vrne seznam $D$-jev in $R$-jev, ki nam predstavljajo, kaj moramo izreči na $i$-tem indeksu, da bo naša vsota največja možna.
 > **Pred dopolnitvijo:** `lisjak([5, 2, 3, 20, -10, -13, 10, 22])`\
 > \>>> 81\
 > **Po dopolnitvi:** `lisjak([5, 2, 3, 20, -10, -13, 10, 22])`\
