@@ -115,7 +115,6 @@ def naj_pad_podzap_risi(seznam):
     plt.plot([-1,15],[1,1],color='b',linewidth='2')
     for el in seznam:
         if el[1] in naj_zap:
-            print(el)
             plt.plot([el[0],el[1]],[0,1],color='g',linewidth='3',marker=".", markersize=20,markerfacecolor='r')
     plt.show()
     return naj_zap
