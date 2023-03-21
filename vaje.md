@@ -2,7 +2,6 @@
 **Datum:** 22. 3. 2023 
 1. Napišite funkcijo `najvecja_vsota(tab)`, ki poišče največjo vsoto v zaporednem podseznamu danega seznama <br>
 [-2, 3, 5, -6, -4, 5, -13, 2, 1, 7, -5, -7, 3, 8, -30, -13, 7]\
-**Namig:** [Kadanov algoritem](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)
 ---
 2. Napišite funkcijo `najvecji_produkt(tab)`, ki poišče največji produkt v zaporednem podseznamu danega seznama <br>
 [3, -3, -5, 2, -1, -2, 3, -2]
